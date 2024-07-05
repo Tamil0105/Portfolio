@@ -8,7 +8,7 @@ export const featuresData = [
  {
     id: 1,
     icon: <FaHtml5 />,
-    title: "Frontend Development",
+    title: "Frontend  Development",
     des: "Building responsive and interactive user interfaces using HTML, CSS, and JavaScript.",
   },
   {
