@@ -8,7 +8,7 @@ const ContactLeft = () => {
       <img
         className="w-full h-64 object-cover rounded-lg mb-2"
         src={contactImg}
-        alt="contactImg"
+        alt="contactImg "
       />
       <div className="flex flex-col gap-4">
         <h3 className="text-3xl font-bold text-white">Tamilselvan</h3>
