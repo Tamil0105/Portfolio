@@ -9,10 +9,10 @@ import { navLinksdata } from '../../constants';
 const Navbar = () => {
   const [showMenu, setShowMenu]=useState(false)
   return (
-    <div className="w-full h-24 sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
-      <div>
+    <div className="w-full h-24 sticky top-0 z-50 bg-bodyColor mx-auto flex justify-center items-center font-titleFont  d">
+      {/* <div>
         <img className='h-12 w-12 rounded-full border border-gray-500' src={logo} alt="logo" />
-      </div>
+      </div> */}
       <div>
         <ul className="hidden mdl:inline-flex items-center gap-6 lg:gap-10">
           {navLinksdata.map(({ _id, title, link }) => (

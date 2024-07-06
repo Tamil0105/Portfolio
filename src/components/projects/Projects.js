@@ -28,12 +28,12 @@ const Projects = () => {
           des=" GoZen Cal is a user-friendly scheduling tool that simplifies the process of booking appointments and meetings. It integrates with popular calendar systems, allowing users to set their availability and share links for others to schedule time without back-and-forth emails. Ideal for professionals and businesses aiming to enhance their scheduling efficiency and client interactions."
           src={projectTwo}
         />
-        {/* <ProjectsCard
-          title="Chatting App"
-          des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!"
+        <ProjectsCard
+        webLink={'https://component-developer.vercel.app/'}
+          title="Ai-Components-Generator"
+          des=" The Ai-Components-Generator is an advanced tool designed to streamline the development process by providing pre-built, customizable UI components such as buttons and cards. This generator leverages artificial intelligence to offer developers a seamless way to create visually appealing and functionally robust elements for their web applications."
           src={projectThree}
-        /> */}
+        />
         {/* <ProjectsCard
           title="SOCIAL MEDIA CLONE"
           des=" Lorem, ipsum dolor sit amet consectetur adipisicing elit.

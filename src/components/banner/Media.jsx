@@ -15,12 +15,14 @@ const Media = () => {
             <span className="bannerIcon">
               <FaTwitter />
             </span>
-            <span className="bannerIcon">
+            <span onClick={()=>{
+              window.open('https://www.linkedin.com/in/tamil-selvan-s-035835169/')
+            }}  className="bannerIcon">
               <FaLinkedinIn />
             </span>
           </div>
         </div>
-        <div className='ml-2'>
+        <div className=''>
           <h2 className="text-base uppercase font-titleFont mb-4">
             BEST SKILL ON
           </h2>

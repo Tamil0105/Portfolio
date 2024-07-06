@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className="w-full py-20 h-auto border-b-[1px] border-b-black grid grid-cols-1 md:grid-cols-2 lgl:grid-cols-4 gap-8">
       <div className="w-full h-full flex flex-col gap-8">
-        <img className="w-32" src={logo} alt="logo" />
+        {/* <img className="w-32" src={logo} alt="logo" /> */}
         <div className="flex gap-4">
           <span className="bannerIcon">
             <FaFacebookF />
@@ -14,15 +14,23 @@ const Footer = () => {
           <span className="bannerIcon">
             <FaTwitter />
           </span>
-          <span className="bannerIcon">
+          <span onClick={()=>{
+              window.open('https://www.linkedin.com/in/tamil-selvan-s-035835169/')
+            }}  className="bannerIcon">
             <FaLinkedinIn />
           </span>
         </div>
       </div>
-      <div className="w-full h-full">
-        <h3 className="text-xl uppercase text-designColor tracking-wider">
-          Quick Link
-        </h3>
+
+      <div className='flex gap-10 items-center '>
+        {["About","Portfolio","Resume","Services","Contact"].map((r,i)=>{
+          return<span className='w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer '>{r}   
+           {/* <span className="w-full h-[1px] hover: bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span> */}
+</span>
+        })}
+      </div>
+      {/* <div className="w-full h-full">
+       
         <ul className="flex flex-col gap-4 font-titleFont font-medium py-6 overflow-hidden">
           <li>
             <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
@@ -55,8 +63,8 @@ const Footer = () => {
             </span>
           </li>
         </ul>
-      </div>
-      <div className="w-full h-full">
+      </div> */}
+      {/* <div className="w-full h-full">
         <h3 className="text-xl uppercase text-designColor tracking-wider">
           RESOURCES
         </h3>
@@ -129,7 +137,7 @@ const Footer = () => {
             </span>
           </li>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 }

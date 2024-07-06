@@ -33,7 +33,9 @@ A Full Stack Developer is proficient in both front-end (HTML, CSS, JavaScript, R
           <span className="bannerIcon">
             <FaTwitter />
           </span>
-          <span className="bannerIcon">
+          <span onClick={()=>{
+              window.open('https://www.linkedin.com/in/tamil-selvan-s-035835169/')
+            }}  className="bannerIcon">
             <FaLinkedinIn />
           </span>
         </div>
